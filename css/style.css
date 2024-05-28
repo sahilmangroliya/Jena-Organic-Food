@@ -1,0 +1,540 @@
+/* open-sans-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/open-sans-v36-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v36-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* -------------------------- Default CSS  -------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --open-sans: 'Open Sans';
+    --red: #D54343;
+    --grey: #F7F7F7;
+    --black: #253237;
+    --white: #FFFFFF;
+    --font-color: #777;
+}
+body{
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    background-color: var(--white);
+    font-family: var(--open-sans);
+    color: var(--black);
+}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+    font-family: var(--open-sans);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+}
+a{
+    color: black !important;
+    text-decoration: none !important;
+}
+li{
+    list-style-type: none;
+}
+.spacer{
+    padding: 90px 0;
+}
+.bg-theme{
+    background-color: var(--grey);
+    color: var(--black);
+    border-bottom: 1px solid rgba(0, 0 , 0, 0.1);
+}
+
+
+
+.owl-item
+{
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------ */
+ /* ------------------------- header section ------------------------- */
+.heart{
+    font-size: 22px;
+}
+.eight{
+    font-size: 14px;
+}
+button{
+    color: var(--white);
+    background-color: var(--red);
+    font-size: 50px;
+    padding: 15px 30px;
+    border: 1px solid transparent;
+    transition: .5s;
+}
+button:hover{
+    background-color: #D95555;
+}
+.down{
+    font-size: 10px;
+}
+.english{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.english:hover{
+    color: var(--red);
+}
+.usd{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.usd:hover{
+    color: var(--red);
+}
+
+.form-input-group{
+    align-items: center;
+    border: 2px solid var(--red);
+    border-radius: 35px;
+    color: var(--font-color);
+    height: 50px;
+    position: relative;
+    display: flex;
+}
+.form-input-group input{
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 14px;
+    height: 50px;
+    outline: none;
+    width: 400px;
+    padding: 0 80px 0 20px;
+
+}
+.form-input-group .categories-dropsown{
+    padding-right: 80px;
+}
+.form-input-group button{
+    border-radius: 0 22px 22px 0;
+    color: #fff;
+    font-size: 20px;
+    height: 47px;
+}
+.form-input-group button i{
+    position: absolute;
+    top: 13px;
+    right: 20px;
+} 
+.main-menu li a{
+    display: block;
+}
+.form-control{
+    cursor: pointer;
+    box-shadow: none !important;
+    border: none !important;
+    background-color: transparent !important;
+}
+ /* ------------------------------------------------------------------ */
+ /* -------------------------- slider section start------------------------- */
+.slider-button{
+    border-radius: 50px;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: white;
+    color: black; 
+    transition: .5s;
+}
+.slider-button:hover{
+    background-color: var(--red);
+    color:white;
+}
+
+.slider-content{
+    position: absolute;
+    top: 100px;
+    color: white;
+}
+#slider1.owl-theme .owl-nav.disabled+.owl-dots{
+    margin: 0 !important;
+}
+#slider1.owl-theme .owl-dots .owl-dot span{
+    height: 15px;
+    width: 15px;
+}
+#slider1.owl-theme .owl-dots .owl-dot span{
+    background-color: rgba(255, 255 , 255, 0.4);
+}
+#slider1.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+{
+    background-color: white;
+}
+#slider1.owl-theme .owl-dots{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+ /* -------------------------- slider section end------------------------- */
+
+ /* ---------------------- overview section 1 start------------------------ */
+.box p{
+    font-size: 16px;
+    color: var(--font-color);
+}
+/* ---------------------- overview section 1 end ------------------------- */
+
+
+/* ---------------------- overview section 2 start------------------------ */
+#slider2.owl-theme .owl-nav{
+    margin: 0;
+}
+#slider2.owl-theme .owl-nav button{
+    height: 40px;
+    width: 40px;
+    background: transparent !important;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    transition: .5s;
+    color: var(--font-color) !important;
+    font-size: 60px !important;
+}
+#slider2.owl-theme .owl-nav button.owl-prev{
+    left: -100px;
+}
+#slider2.owl-theme .owl-nav button.owl-next{
+    right: -90px;
+}
+#slider2.owl-theme .owl-nav button:hover{
+    color: var(--red) !important;
+}
+.content-box .fs{
+    font-size: 10px;
+}
+.img_box{
+    position: relative;
+}
+.overflow{
+    padding-bottom: 86px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.content-box{
+    padding: 22px 7px 23px 0;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    bottom: -47px;
+    transition: .5s;
+}
+.content-box:hover{
+    bottom: 0;
+}
+.img_box .img1{
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    opacity: 0;
+    cursor: pointer;
+    visibility: hidden;
+}
+.img_box:hover .img1{
+    opacity: 1;
+    visibility: visible;
+}
+.img_box{
+    overflow: hidden;
+    position: relative;
+}
+.banner .poster{
+    height: 18px;
+    width: 55px;
+    border-radius: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    line-height: 18px;
+}
+.banner1 .poster{
+    background-color: var(--red);
+}
+/* ---------------------- overview section 1 end ------------------------- */
+
+/* ---------------------- overview section 4 start  ------------------------- */
+#slider3 .img_box2 .banner .poster{
+    height: 18px;
+    width: 55px;
+    border-radius: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--red);
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    line-height: 18px;
+}
+.banner1 .poster{
+    background-color: var(--red);
+}
+#slider3 .img_box2 .banner .poster{
+    height: 18px;
+    width: 55px;
+    border-radius: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--red);
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    line-height: 18px;
+}
+#slider3 .img_box2 .banner1 .poster{
+    background-color: var(--black);
+}
+#slider3.owl-theme .owl-nav{
+    margin: 0;
+}
+#slider3.owl-theme .owl-nav button{
+    height: 40px;
+    width: 40px;
+    background: transparent !important;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    transition: .5s;
+    color: var(--font-color) !important;
+    font-size: 60px !important;
+}
+#slider3.owl-theme .owl-nav button.owl-prev{
+    left: -100px;
+}
+#slider3.owl-theme .owl-nav button.owl-next{
+    right: -90px;
+}
+#slider3.owl-theme .owl-nav button:hover{
+    color: var(--red) !important;
+}
+.overflow1{
+    padding-bottom: 86px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.content-box1{
+    padding: 22px 7px 23px 0;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    bottom: -50px;
+    transition: .5s;
+}
+.content-box1:hover{
+    bottom: 0;
+}
+/* ---------------------- overview section 4 end ------------------------- */
+
+
+/* -------------------- over view section 5 start ----------------------- */
+.section{
+    height: 100vh;
+    background-image: url(../assets/asset\ 55.webp);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.spacer1{
+    padding: 80px 0 0 0;
+}
+.width{
+    z-index: 10;
+    position: absolute;
+    top: 180px;
+    /* left: 200px; */
+    /* width: 30%; */
+    color: white;
+}
+.width .now{
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    transition: .5s;
+}
+.width .now:hover{
+    background-color: var(--black);
+    color: white;
+}
+/* -------------------- over view section 5 end ----------------------- */
+
+
+/* -------------------- over view section 6 start ----------------------- */
+.content1 a{
+    color: #777 !important;
+}
+#slider4.owl-theme .owl-nav{
+    margin: 0;
+}
+#slider4.owl-theme .owl-nav button{
+    height: 40px;
+    width: 40px;
+    background: transparent !important;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    transition: .5s;
+    color: var(--font-color) !important;
+    font-size: 60px !important;
+}
+#slider4.owl-theme .owl-nav button.owl-prev{
+    left: -100px;
+}
+#slider4.owl-theme .owl-nav button.owl-next{
+    right: -90px;
+}
+#slider4.owl-theme .owl-nav button:hover{
+    color: var(--red) !important;
+}    
+/* -------------------- over view section 6 end ----------------------- */
+
+
+/* -------------------- over view section 7 start ----------------------- */
+.part1 .content-part{
+    padding: 65px 20px 20px;
+}
+.part1 .content-part a{
+    color: #777 !important;
+}
+.part1 img{
+    /* min-width: 255px; */
+    height: 100%;
+}
+#slider5.owl-theme .owl-nav{
+    margin: 0;
+}
+#slider5.owl-theme .owl-nav button{
+    height: 40px;
+    width: 40px;
+    background: transparent !important;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    transition: .5s;
+    color: var(--font-color) !important;
+    font-size: 60px !important;
+}
+#slider5.owl-theme .owl-nav button.owl-prev{
+    left: -100px;
+}
+#slider5.owl-theme .owl-nav button.owl-next{
+    right: -90px;
+}
+#slider5.owl-theme .owl-nav button:hover{
+    color: var(--red) !important;
+}
+/* -------------------- over view section 7 end ----------------------- */
+
+
+/* -------------------- over view section 8 start ----------------------- */
+.imgs{
+    display: inline-block;
+}
+#slider6.owl-theme .owl-nav{
+    margin: 0;
+}
+#slider6.owl-theme .owl-nav button{
+    height: 40px;
+    width: 40px;
+    background: transparent !important;
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+    transition: .5s;
+    color: var(--font-color) !important;
+    font-size: 60px !important;
+}
+#slider6.owl-theme .owl-nav button.owl-prev{
+    left: -100px;
+}
+#slider6.owl-theme .owl-nav button.owl-next{
+    right: -90px;
+}
+#slider6.owl-theme .owl-nav button:hover{
+    color: var(--red) !important;
+}           
+/* -------------------- over view section 8 end ----------------------- */
+
+
+/* -------------------- over view section 9 start ----------------------- */
+.section-9{
+    background-color: #F7F7F7;
+} 
+.form-input-group1{
+    align-items: center;
+    border: 2px solid rgba(0, 0 , 0, 0.1);
+    border-radius: 35px;
+    color: var(--font-color);
+    height: 50px;
+    position: relative;
+    display: flex;
+}
+.form-input-group1 input{
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 14px;
+    height: 50px;
+    outline: none;
+    /* width: 400px; */
+    padding: 0 0 0 20px;
+
+}
+.form-input-group1 button{
+    border-radius: 0 22px 22px 0;
+    color: #fff;
+    border: 1px solid var(--red);
+    font-size: 14px;
+    height: 49px;
+    padding: 0 20px;
+    transition: .5s;
+}
+.form-input-group1 .sign{
+    line-height: 14px;
+}
+.form-input-group1 button:hover{
+    background-color: black;
+    border-color: black;
+}
+/* -------------------- over view section 9 end ----------------------- */
+
+
+/* 12 2000
+24 4000
+36 8000
+48 16000
+60 32000
+72 64000
+84 128000
+96 256000 */
